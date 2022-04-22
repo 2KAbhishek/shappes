@@ -40,7 +40,9 @@ double Triangle::calcArea()
         Point p1 = this->pointList[0];
         Point p2 = this->pointList[1];
         Point p3 = this->pointList[2];
-        area = 0.5 * abs((p1.getX() * (p2.getY() - p3.getY()) + p2.getX() * (p3.getY() - p1.getY()) + p3.getX() * (p1.getY() - p2.getY())));
+        area = 0.5 * abs((p1.getX() * abs(p2.getY() - p3.getY()) +
+                          p2.getX() * abs(p3.getY() - p1.getY()) +
+                          p3.getX() * abs(p1.getY() - p2.getY())));
     }
     else
     {
