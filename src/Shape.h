@@ -2,6 +2,7 @@
 #define SHAPE_H
 
 #include <iostream>
+#include <vector>
 #include "Point.h"
 
 class Shape
