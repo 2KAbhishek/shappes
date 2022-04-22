@@ -4,7 +4,6 @@
 #include "Point.h"
 #include "Shape.h"
 
-
 Shape::Shape()
 {
 }
@@ -28,12 +27,17 @@ void Shape::addPoint(Point &point)
     this->pointList.push_back(point);
 }
 
+double Shape::calcArea()
+{
+    return 0;
+}
+
 std::string Shape::toString()
 {
     std::stringstream ss;
     for (std::vector<Point>::iterator it = this->pointList.begin(); it != this->pointList.end(); ++it)
     {
-        ss << it->toString() << std::endl;
+        ss << it->toString() << " ";
     }
     return ss.str();
 }
