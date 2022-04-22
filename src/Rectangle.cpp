@@ -21,7 +21,6 @@ Rectangle::~Rectangle()
 {
 }
 
-
 void Rectangle::addPoint(Point &point)
 {
     if (this->pointList.size() < 4)
